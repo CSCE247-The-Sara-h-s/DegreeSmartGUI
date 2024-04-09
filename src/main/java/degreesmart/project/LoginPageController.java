@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.input.KeyCode;
 import javafx.application.Platform;
 
@@ -16,11 +17,8 @@ public class LoginPageController implements Initializable {
 	private TextField usernameField;
     
     @FXML
-    private void DEV_test_login(KeyEvent event) {
-    	if (event.getCode() != KeyCode.ENTER) {
-    		return;
-    	}
-
+    private void DEV_test_login(MouseEvent event) {
+    
     	try {
     		switch (usernameField.getText().toLowerCase()) {
 	    	case "admin":
